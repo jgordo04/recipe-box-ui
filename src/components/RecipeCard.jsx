@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 export default function RecipeCard({ recipe, onDelete }) {
   return (
-    <div className="bg-white rounded-lg shadow hover:shadow-md transition p-5 flex flex-col">
-      <Link to={`/recipes/${recipe.id}`} className="text-lg font-semibold text-gray-900 hover:text-amber-700">
+    <div className="bg-violet-50 rounded-lg shadow hover:shadow-md transition p-5 flex flex-col">
+      <Link to={`/recipes/${recipe.id}`} className="text-lg font-semibold text-gray-900 hover:text-emerald-900">
         {recipe.title}
       </Link>
       {recipe.description && (

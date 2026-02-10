@@ -148,7 +148,7 @@ export default function RecipeForm() {
                   onClick={() => toggleTag(tag.id)}
                   className={`text-xs px-3 py-1 rounded-full border transition ${
                     selectedTagIds.includes(tag.id)
-                      ? 'bg-amber-600 text-white border-amber-600'
+                      ? 'bg-emerald-800 text-white border-amber-600'
                       : 'bg-white text-gray-600 border-gray-300 hover:border-amber-400'
                   }`}
                 >
@@ -198,7 +198,7 @@ export default function RecipeForm() {
           <button
             type="button"
             onClick={() => setIngredients((prev) => [...prev, { ...emptyIngredient }])}
-            className="mt-2 text-sm text-amber-700 hover:text-amber-900"
+            className="mt-2 text-sm text-emerald-900 hover:text-amber-900"
           >
             + Add Ingredient
           </button>
@@ -231,7 +231,7 @@ export default function RecipeForm() {
           <button
             type="button"
             onClick={() => setSteps((prev) => [...prev, { ...emptyStep }])}
-            className="mt-2 text-sm text-amber-700 hover:text-amber-900"
+            className="mt-2 text-sm text-emerald-900 hover:text-amber-900"
           >
             + Add Step
           </button>
@@ -241,7 +241,7 @@ export default function RecipeForm() {
           <button
             type="submit"
             disabled={saving}
-            className="bg-amber-600 text-white px-5 py-2 rounded-md font-semibold hover:bg-amber-700 transition disabled:opacity-50"
+            className="bg-emerald-800 text-white px-5 py-2 rounded-md font-semibold hover:bg-emerald-900 transition disabled:opacity-50"
           >
             {saving ? 'Saving…' : isEdit ? 'Update Recipe' : 'Create Recipe'}
           </button>

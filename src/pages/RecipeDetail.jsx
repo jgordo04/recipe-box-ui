@@ -35,7 +35,7 @@ export default function RecipeDetail() {
         <div className="flex gap-2 shrink-0">
           <Link
             to={`/recipes/${id}/edit`}
-            className="bg-amber-600 text-white px-3 py-1.5 rounded-md text-sm font-semibold hover:bg-amber-700 transition"
+            className="bg-emerald-800 text-white px-3 py-1.5 rounded-md text-sm font-semibold hover:bg-emerald-900 transition"
           >
             Edit
           </Link>
