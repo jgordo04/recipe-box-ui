@@ -4,8 +4,7 @@ export async function fetchRecipes(tag) {
   const url = tag ? `/recipes?tag=${encodeURIComponent(tag)}` : '/recipes';
   const res = await fetch(url, { headers });
   if (!res.ok) throw new Error('Failed to fetch recipes');
-  const data = await res.json();
-  return data.recipes;
+  return res.json();
 }
 
 export async function fetchRecipe(id) {
@@ -48,6 +47,5 @@ export async function deleteRecipe(id) {
 export async function fetchTags() {
   const res = await fetch('/tags', { headers });
   if (!res.ok) throw new Error('Failed to fetch tags');
-  const data = await res.json();
-  return data.tags;
+  return res.json();
 }
